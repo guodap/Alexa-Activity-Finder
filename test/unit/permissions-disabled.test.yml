@@ -1,0 +1,30 @@
+---
+configuration:
+  locale: en-GB
+  modelInteraction: models/en-GB.json
+  description: unitTestPermDisabledSuiteDesc
+---
+- test: unitTestPD1
+- LaunchRequest: "launchPrompt"
+---
+- test: unitTestPD2
+- RecommendThingsToDoIntent:
+    - response.outputSpeech.ssml: "addressPermissions"
+---
+- test: unitTestPD3
+- RecommendThingsToDoIntent keyword=restaurant:
+    - response.outputSpeech.ssml: "addressPermissions"
+---
+- test: unitTestPD4
+- RecommendThingsToDoIntent location=Sydney:
+    - response.outputSpeech.ssml: "recsReturnedSydney"
+    - response.reprompt.outputSpeech.ssml: "recsReturnedReprompt"
+---
+- test: unitTestPD5
+- RecommendThingsToDoIntent keyword=cafe location=Dublin:
+    - response.outputSpeech.ssml: "recsReturnedCafeDublin"
+    - response.reprompt.outputSpeech.ssml: "recsReturnedReprompt"
+---
+- test: unitTestPD6
+- SendItineraryIntent:
+    - response.outputSpeech.ssml: "emailPermissions"

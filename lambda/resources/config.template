@@ -1,0 +1,10 @@
+{
+    "email":{
+        "service": "gmail",
+        "username": "@gmail.com",
+        "password": "123"
+    },
+    "google-api":{
+        "key": "xyz"
+    }
+}

@@ -1,0 +1,119 @@
+# This is the test file for your unit tests, feel free to copy and modify the template test
+# as many times as you want. In this same folder, you'll also find a testing.json
+# file. It contains global configurations for future test files you might create in the future.
+# You'll also find a folder called locales, it contains the localization files for all your supported
+# locales. Just put a value to each variable and they will be replaced here. Add, remove or modify
+# as necessary.
+#
+# Find more info on https://read.bespoken.io/unit-testing/getting-started/
+# ---
+# configuration:
+#   description: unitTestPESuiteDescription
+# ---
+# - test : firstTestName
+# - LaunchRequest : "launchPrompt"
+# - AMAZON.HelpIntent :
+#   - prompt : "helpPrompt"
+#   - cardContent : "helpPrompt"
+#   - cardTitle : "cardTitle"
+
+---
+configuration:
+  interactionModel: models/en-GB.json
+  locale: en-GB
+  description: unitTestPermEnabledSuiteDesc
+  address:
+    addressLine1: 215 Elm Street, NW
+    city: Washington
+    countryCode: US
+    postalCode: 20816
+    stateOrRegion: DC
+  userProfile:
+    email: guoda.puidokaite@gmail.com
+    name: Guoda P
+---
+- test: unitTestPE1
+- LaunchRequest: "launchPrompt"
+---
+- test: unitTestPE2
+- PutAPinOnItIntent location_names=hey:
+    - response.outputSpeech.ssml: "pinNoPinned"
+---
+- test: unitTestPE3
+- RecommendThingsToDoIntent keyword=mcdonalds:
+    - response.outputSpeech.ssml: "recsReturnedMcdonalds"
+---
+- test: unitTestPE4
+- RecommendThingsToDoIntent:
+    - response.outputSpeech.ssml: "recsReturned"
+    - response.reprompt.outputSpeech.ssml: "recsReturnedReprompt"
+---
+- test: unitTestPE5
+- RecommendThingsToDoIntent keyword=restaurant:
+    - response.outputSpeech.ssml: "recsReturnedRestaurant"
+    - response.reprompt.outputSpeech.ssml: "recsReturnedReprompt"
+---
+- test: unitTestPE6
+- RecommendThingsToDoIntent location=Sydney:
+    - response.outputSpeech.ssml: "recsReturnedSydney"
+    - response.reprompt.outputSpeech.ssml: "recsReturnedReprompt"
+---
+- test: unitTestPE7
+- RecommendThingsToDoIntent keyword=cafe location=Dublin:
+    - response.outputSpeech.ssml: "recsReturnedCafeDublin"
+    - response.reprompt.outputSpeech.ssml: "recsReturnedReprompt"
+---
+- test: unitTestPE8
+- SendItineraryIntent:
+    - response.outputSpeech.ssml: "sendItineraryNoPinned"
+---
+- test: unitTestPE9
+- PutAPinOnItIntent:
+    - response.outputSpeech.ssml: "pinNoLocations"
+---
+- test: unitTestPE10
+- PutAPinOnItIntent location_names=hey:
+    - response.outputSpeech.ssml: "pinCouldNotFind"
+---
+- test: unitTestPE11
+- PutAPinOnItIntent location_names=Art:
+    - response.outputSpeech.ssml: "pin1Location"
+---
+- test: unitTestPE12
+- PutAPinOnItIntent location_names=Art:
+    - response.outputSpeech.ssml: "pinExists"
+---
+- test: unitTestPE13
+- PutAPinOnItIntent location_names="Art Gallery":
+    - response.outputSpeech.ssml: "pinCouldNotFind"
+---
+- test: unitTestPE14
+- PutAPinOnItIntent location_names="Art Gallery Dublin":
+    - response.outputSpeech.ssml: "pinCouldNotFind"
+---
+- test: unitTestPE15
+- PutAPinOnItIntent location_names=all:
+    - response.outputSpeech.ssml: "pinAll"
+---
+- test: unitTestPE16
+- PutAPinOnItIntent location_names=everything:
+    - response.outputSpeech.ssml: "pinAll"
+---
+- test: unitTestPE17
+- SendItineraryIntent:
+    - response.outputSpeech.ssml: "sendItinerarySent"
+---
+- test: unitTestPE18
+- AMAZON.HelpIntent: "helpPrompt"
+---
+- test: unitTestPE19
+- AMAZON.CancelIntent: "goodbyePrompt"
+---
+- test: unitTestPE20
+- AMAZON.StopIntent: "goodbyePrompt"
+---
+- test: unitTestPE21
+- AMAZON.NavigateHomeIntent: "navigatePrompt"
+---
+- test: unitTestPE22
+- AMAZON.FallbackIntent: "fallbackPrompt"

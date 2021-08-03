@@ -1,0 +1,19 @@
+
+---
+configuration:
+  interactionModel: models/en-GB.json
+  locale: en-GB
+  description: e2eTestSuiteDescDisabled
+---
+- test: e2eTest7
+- ask activity finder to recommend something locally:
+    - prompt: "recDisabledAddressPermissions"
+- ask activity finder to pin everything:
+    - prompt: "pinBeforeRecs"
+- ask activity finder to email me:
+    - prompt: "recDisabledEmailNamePermissions"
+- ask activity finder to recommend something in New York:
+    - prompt: "recsReturnedNewYork"
+- stop:
+    - prompt: "goodbyePrompt"
+---

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1616970780906" clover="3.2.0">
+  <project timestamp="1616970780906" name="All files">
+    <metrics statements="292" coveredstatements="212" conditionals="103" coveredconditionals="72" methods="52" coveredmethods="35" elements="447" coveredelements="319" complexity="0" loc="292" ncloc="292" packages="2" files="8" classes="8"/>
+    <package name="Alexa - Things To Do">
+      <metrics statements="52" coveredstatements="4" conditionals="16" coveredconditionals="0" methods="9" coveredmethods="0"/>
+      <file name="index.js" path="/Users/Guoda/Documents/Alexa - Things To Do/index.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+      </file>
+      <file name="local-debugger.js" path="/Users/Guoda/Documents/Alexa - Things To Do/local-debugger.js">
+        <metrics statements="41" coveredstatements="0" conditionals="16" coveredconditionals="0" methods="8" coveredmethods="0"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="83" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="84" count="0" type="stmt"/>
+        <line num="86" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="89" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="90" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="112" count="0" type="stmt"/>
+        <line num="113" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="114" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="126" count="0" type="stmt"/>
+        <line num="127" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="128" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="129" count="0" type="stmt"/>
+        <line num="131" count="0" type="stmt"/>
+        <line num="134" count="0" type="stmt"/>
+      </file>
+      <file name="util.js" path="/Users/Guoda/Documents/Alexa - Things To Do/util.js">
+        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="Alexa - Things To Do.lib">
+      <metrics statements="240" coveredstatements="208" conditionals="87" coveredconditionals="72" methods="43" coveredmethods="35"/>
+      <file name="handlers.js" path="/Users/Guoda/Documents/Alexa - Things To Do/lib/handlers.js">
+        <metrics statements="119" coveredstatements="97" conditionals="39" coveredconditionals="36" methods="23" coveredmethods="17"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="14" count="75" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="26" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
+        <line num="37" count="5" type="stmt"/>
+        <line num="39" count="14" type="cond" truecount="3" falsecount="0"/>
+        <line num="44" count="10" type="stmt"/>
+        <line num="45" count="10" type="stmt"/>
+        <line num="46" count="10" type="stmt"/>
+        <line num="47" count="10" type="stmt"/>
+        <line num="48" count="10" type="stmt"/>
+        <line num="52" count="5" type="stmt"/>
+        <line num="59" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="64" count="2" type="stmt"/>
+        <line num="65" count="2" type="stmt"/>
+        <line num="67" count="2" type="stmt"/>
+        <line num="71" count="5" type="stmt"/>
+        <line num="78" count="2" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="87" count="5" type="stmt"/>
+        <line num="94" count="2" type="stmt"/>
+        <line num="97" count="2" type="stmt"/>
+        <line num="98" count="2" type="stmt"/>
+        <line num="99" count="2" type="stmt"/>
+        <line num="101" count="2" type="stmt"/>
+        <line num="105" count="5" type="stmt"/>
+        <line num="112" count="0" type="stmt"/>
+        <line num="115" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+        <line num="118" count="0" type="stmt"/>
+        <line num="120" count="0" type="stmt"/>
+        <line num="124" count="5" type="stmt"/>
+        <line num="126" count="70" type="stmt"/>
+        <line num="127" count="70" type="cond" truecount="2" falsecount="0"/>
+        <line num="135" count="21" type="stmt"/>
+        <line num="136" count="21" type="stmt"/>
+        <line num="137" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="138" count="21" type="stmt"/>
+        <line num="139" count="21" type="stmt"/>
+        <line num="140" count="21" type="stmt"/>
+        <line num="141" count="21" type="stmt"/>
+        <line num="142" count="21" type="stmt"/>
+        <line num="145" count="21" type="cond" truecount="4" falsecount="0"/>
+        <line num="146" count="3" type="stmt"/>
+        <line num="149" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="150" count="11" type="stmt"/>
+        <line num="152" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="153" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="154" count="18" type="stmt"/>
+        <line num="155" count="18" type="stmt"/>
+        <line num="157" count="18" type="cond" truecount="1" falsecount="1"/>
+        <line num="158" count="0" type="stmt"/>
+        <line num="159" count="0" type="stmt"/>
+        <line num="162" count="18" type="stmt"/>
+        <line num="165" count="18" type="stmt"/>
+        <line num="168" count="0" type="stmt"/>
+        <line num="173" count="5" type="stmt"/>
+        <line num="175" count="41" type="stmt"/>
+        <line num="176" count="41" type="cond" truecount="2" falsecount="0"/>
+        <line num="179" count="24" type="stmt"/>
+        <line num="180" count="24" type="stmt"/>
+        <line num="181" count="24" type="stmt"/>
+        <line num="182" count="24" type="stmt"/>
+        <line num="183" count="24" type="stmt"/>
+        <line num="185" count="24" type="cond" truecount="2" falsecount="0"/>
+        <line num="186" count="22" type="stmt"/>
+        <line num="188" count="24" type="stmt"/>
+        <line num="191" count="0" type="stmt"/>
+        <line num="196" count="5" type="stmt"/>
+        <line num="198" count="0" type="stmt"/>
+        <line num="199" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="202" count="0" type="stmt"/>
+        <line num="203" count="0" type="stmt"/>
+        <line num="205" count="0" type="stmt"/>
+        <line num="206" count="0" type="stmt"/>
+        <line num="209" count="0" type="stmt"/>
+        <line num="211" count="0" type="stmt"/>
+        <line num="214" count="0" type="stmt"/>
+        <line num="219" count="5" type="stmt"/>
+        <line num="221" count="49" type="stmt"/>
+        <line num="222" count="49" type="cond" truecount="2" falsecount="0"/>
+        <line num="225" count="8" type="stmt"/>
+        <line num="226" count="8" type="stmt"/>
+        <line num="227" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="228" count="8" type="stmt"/>
+        <line num="229" count="8" type="stmt"/>
+        <line num="231" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="232" count="2" type="stmt"/>
+        <line num="237" count="6" type="stmt"/>
+        <line num="238" count="6" type="stmt"/>
+        <line num="239" count="6" type="stmt"/>
+        <line num="240" count="6" type="stmt"/>
+        <line num="242" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="243" count="4" type="stmt"/>
+        <line num="244" count="4" type="stmt"/>
+        <line num="245" count="4" type="stmt"/>
+        <line num="246" count="4" type="stmt"/>
+        <line num="247" count="4" type="stmt"/>
+        <line num="248" count="4" type="stmt"/>
+        <line num="251" count="2" type="stmt"/>
+        <line num="252" count="2" type="stmt"/>
+        <line num="253" count="2" type="stmt"/>
+        <line num="258" count="0" type="stmt"/>
+        <line num="263" count="5" type="stmt"/>
+      </file>
+      <file name="helpers.js" path="/Users/Guoda/Documents/Alexa - Things To Do/lib/helpers.js">
+        <metrics statements="52" coveredstatements="49" conditionals="18" coveredconditionals="12" methods="6" coveredmethods="6"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="17" count="18" type="stmt"/>
+        <line num="18" count="18" type="stmt"/>
+        <line num="19" count="18" type="stmt"/>
+        <line num="20" count="18" type="stmt"/>
+        <line num="21" count="18" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="18" type="stmt"/>
+        <line num="26" count="18" type="stmt"/>
+        <line num="27" count="18" type="stmt"/>
+        <line num="28" count="18" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="18" type="cond" truecount="1" falsecount="1"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="18" type="stmt"/>
+        <line num="33" count="360" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="319" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="315" type="stmt"/>
+        <line num="37" count="18" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="49" count="4" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="62" count="4" type="stmt"/>
+        <line num="72" count="4" type="stmt"/>
+        <line num="73" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="87" count="4" type="stmt"/>
+        <line num="88" count="4" type="stmt"/>
+        <line num="89" count="4" type="stmt"/>
+        <line num="90" count="4" type="stmt"/>
+        <line num="91" count="4" type="stmt"/>
+        <line num="93" count="4" type="stmt"/>
+        <line num="95" count="4" type="stmt"/>
+        <line num="96" count="18" type="stmt"/>
+        <line num="97" count="18" type="stmt"/>
+        <line num="98" count="18" type="cond" truecount="1" falsecount="1"/>
+        <line num="99" count="18" type="stmt"/>
+        <line num="100" count="18" type="cond" truecount="1" falsecount="1"/>
+        <line num="101" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="102" count="18" type="stmt"/>
+        <line num="103" count="18" type="stmt"/>
+        <line num="106" count="4" type="stmt"/>
+        <line num="107" count="4" type="stmt"/>
+        <line num="108" count="4" type="stmt"/>
+        <line num="109" count="4" type="stmt"/>
+        <line num="112" count="5" type="stmt"/>
+      </file>
+      <file name="interceptors.js" path="/Users/Guoda/Documents/Alexa - Things To Do/lib/interceptors.js">
+        <metrics statements="21" coveredstatements="19" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="3"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="33" count="75" type="stmt"/>
+        <line num="41" count="75" type="stmt"/>
+        <line num="42" count="210" type="stmt"/>
+        <line num="43" count="210" type="stmt"/>
+        <line num="45" count="210" type="stmt"/>
+        <line num="46" count="82" type="stmt"/>
+        <line num="48" count="210" type="stmt"/>
+        <line num="54" count="210" type="cond" truecount="1" falsecount="1"/>
+        <line num="57" count="75" type="stmt"/>
+        <line num="58" count="75" type="stmt"/>
+        <line num="59" count="210" type="stmt"/>
+        <line num="64" count="5" type="stmt"/>
+      </file>
+      <file name="localisation.js" path="/Users/Guoda/Documents/Alexa - Things To Do/lib/localisation.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+      </file>
+      <file name="logic.js" path="/Users/Guoda/Documents/Alexa - Things To Do/lib/logic.js">
+        <metrics statements="47" coveredstatements="42" conditionals="28" coveredconditionals="23" methods="9" coveredmethods="9"/>
+        <line num="4" count="11" type="stmt"/>
+        <line num="5" count="11" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="10" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="11" count="11" type="cond" truecount="3" falsecount="1"/>
+        <line num="12" count="11" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="21" count="18" type="stmt"/>
+        <line num="22" count="18" type="stmt"/>
+        <line num="23" count="90" type="stmt"/>
+        <line num="24" count="90" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="90" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="18" type="stmt"/>
+        <line num="29" count="72" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="18" type="stmt"/>
+        <line num="35" count="22" type="stmt"/>
+        <line num="36" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="15" type="stmt"/>
+        <line num="38" count="40" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="49" count="3" type="stmt"/>
+        <line num="52" count="5" type="stmt"/>
+        <line num="57" count="7" type="stmt"/>
+        <line num="58" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="59" count="6" type="stmt"/>
+        <line num="60" count="30" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="18" type="stmt"/>
+        <line num="62" count="18" type="stmt"/>
+        <line num="65" count="6" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="72" count="8" type="stmt"/>
+        <line num="76" count="34" type="stmt"/>
+        <line num="77" count="77" type="cond" truecount="2" falsecount="0"/>
+        <line num="78" count="14" type="stmt"/>
+        <line num="79" count="20" type="stmt"/>
+        <line num="83" count="5" type="stmt"/>
+        <line num="91" count="46" type="stmt"/>
+        <line num="100" count="10" type="stmt"/>
+        <line num="107" count="14" type="stmt"/>
+        <line num="113" count="5" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

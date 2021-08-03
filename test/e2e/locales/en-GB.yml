@@ -1,0 +1,44 @@
+# E2E Tests
+e2eTestSuiteDesc: E2E testing of full workflows
+e2eTest1: 1. Test without pinning or emailing
+e2eTest2: 2. Test where location and keyword is used and no pinning or emailing
+e2eTest3: 3. Test where all locations are pinned and emailed
+e2eTest4: 4. Test where 3 locations are pinned and emailed
+e2eTest5: 5. Launch skill and ask for help
+e2eTest6: 6. Test all locations are forwarded to the email address with correct reprompts
+
+e2eTestSuiteDescDisabled: E2e testing of disabled permissions
+e2eTest7: 7. Test full workflow with disabled permissions
+
+launchPrompt: Welcome to Activity Finder. I can recommend restaurants, attractions or general things to do in your local area or anywhere in the world! I can also create an itinerary and email it to you. If you would like some tips on how to use the skill say, "tell me more". To start, try saying, "Recommend a local restaurant".
+helpPrompt: Try saying, "Recommend something in my local area" or, "Recommend a cafe in Sydney". Then, when you have heard my recommendations, you can ask me to pin a location by saying, "Pin hardrock cafe", for example. This will add a location to your itinerary. You can also ask to "pin everything". Once you're finished adding to your itinerary, ask me to send it to you by saying, "email me".
+goodbyePrompt: Goodbye!
+fallbackPrompt: Sorry, I don't know about that. Please try again.
+navigatePrompt: AMAZON.NavigateHomeIntent
+pinNoPinned: I'm sorry, I couldn't add any locations to your itinerary.
+recsReturnedMcdonalds: Here is what I found for mcdonalds in Washington, DC.*
+recsReturned: /Here is what I found in Washington, DC.*/
+recsReturnedCafe: /Here is what I found for cafe in Washington, DC.*/
+recsReturnedLocalRestaurant: /Here is what I found for local restaurant in Washington, DC.*/
+recsReturnedReprompt: Would you like another recommendation or to pin a place from these results?
+recsPinnedReprompt: Would you liike another recommendation, pin another location or for me to email you the itinerary? 
+recsReturnedRestaurant: Here is what I found for restaurant in Washington, DC.*
+recsReturnedSydney: Here is what I found in Sydney.*
+recsReturnedCafeDublin: Here is what I found for cafe in Dublin.*
+recsReturnedDublin: Here is what I found in Dublin.*
+recsReturnedNewYork: Here is what I found in New York.*
+sendItineraryNoPinned: I'm sorry, there is currently no itinerary created. Ask me to recommend you something and pin something from the recommendations.
+pinNoLocations: No place name was specified for the pin.
+pinCouldNotFind: I'm sorry, I couldn't add any locations to your itinerary.
+pinXLocations: /I have .* locations added to your itinerary./
+pin1Location: I pinned 1 location to your itinerary.
+pinExists: I have already pinned Art.
+pinAll: I pinned .* locations to your itinerary.
+pinBeforeRecs: Please first ask me for a recommendation. Try saying "recommend something in my local area"..
+sendItinerarySent: I have sent you the itinerary you requested to *
+emailSuccess: I have sent you the itinerary you requested to .*. Thank you for using the Activity Finder skill!
+recDisabledAddressPermissions: You must grant permission to retrieve your address. Find the permission settings in the Alexa mobile App.
+recDisabledEmailNamePermissions: You must grant permission to retrieve your name and email. Find the permission settings in the Alexa mobile App.
+
+# E2E Test Outcomes
+recsReturnedE2ERestaurant: /Here is what I found for restaurant in Washington, DC.*/

@@ -1,0 +1,74 @@
+# This is the test file for your e2e tests, feel free to copy and modify the template test
+# as many times as you want. In this same folder, you'll also find a testing.json
+# file. It contains global configurations for future test files you might create in the future.
+#
+# Find more info on https://read.bespoken.io/end-to-end/getting-started/
+---
+configuration:
+  interactionModel: models/en-GB.json
+  locale: en-GB
+  description: e2eTestSuiteDesc
+  address:
+    addressLine1: 215 Elm Street, NW
+    city: Washington
+    countryCode: US
+    postalCode: 20816
+    stateOrRegion: DC
+  userProfile:
+    email: pandamime100hp@gmail.com
+    name: Guoda P
+---
+- test: e2eTest1
+- recommend a restaurant:
+    - prompt: "recsReturnedE2ERestaurant"
+- stop:
+    - prompt: "goodbyePrompt"
+---
+- test: e2eTest2
+- recommend a cafe:
+    - prompt: "recsReturnedCafe"
+- stop:
+    - prompt: "goodbyePrompt"
+---
+- test: e2eTest3
+- recommend activity:
+    - prompt: "recsReturned"
+- pin all:
+    - prompt: "pinAll"
+- stop:
+    - prompt: "goodbyePrompt"
+---
+- test: e2eTest4
+- recommend activity:
+    - prompt: "recsReturned"
+- pin National Mall:
+    - prompt: "pin1Location"
+- pin Washington Monument:
+    - prompt: "pin1Location"
+- pin World:
+    - prompt: "pin1Location"
+- send me the itinerary:
+    - prompt: "emailSuccess"
+- stop:
+    - prompt: "goodbyePrompt"
+---
+- test: e2eTest5
+- open Activity Finder:
+    - prompt: "launchPrompt"
+- help:
+    - prompt: "helpPrompt"
+- stop:
+    - prompt: "goodbyePrompt"
+---
+- test: e2eTest6
+- open Activity Finder:
+    - prompt: "launchPrompt"
+- recommend a local restaurant:
+    - prompt: "recsReturnedLocalRestaurant"
+    - reprompt: "recsReturnedReprompt"
+- pin everything:
+    prompt: "pinAll"
+    reprompt: "recsPinnedReprompt"
+- email:
+    prompt: "emailSuccess"
+---

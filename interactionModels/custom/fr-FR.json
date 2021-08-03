@@ -1,0 +1,170 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "recherche d\u0027activite",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "annuler"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "aider",
+            "comment"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "arreter",
+            "silence",
+            "tais-toi",
+            "arrete ça"
+          ]
+        },
+        {
+          "name": "RecommendThingsToDoIntent",
+          "slots": [
+            {
+              "name": "keyword",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "location",
+              "type": "AMAZON.City"
+            }
+          ],
+          "samples": [
+            "quels {keyword} sont locaux",
+            "que {keyword} puis-je trouver localement",
+            "quels {keyword} sont a proximite",
+            "ce que {keyword} sont autour de moi",
+            "quelles activites pouvez-vous recommander",
+            "quelle activite puis-je faire",
+            "recommander une activite",
+            "recommander les meilleures choses a faire",
+            "recommander quelque chose que je peux faire localement",
+            "recommander quelque chose a faire localement",
+            "que puis-je faire localement",
+            "qu\u0027y a-t-il a faire localement",
+            "qu\u0027est-ce que je peux faire a proximite",
+            "que puis-je faire a proximite",
+            "recommande ce que vous pouvez faire a proximite",
+            "recommander ce que vous pouvez faire a proximite",
+            "recommander ce que je peux faire a proximite",
+            "recommander quelque chose a faire a proximite",
+            "recommander des choses",
+            "ou puis-je aller",
+            "recommander quelque chose",
+            "Que puis-je faire",
+            "recommander des choses a faire",
+            "recommander des activites dans ma region",
+            "recommander {keyword} a {location}",
+            "recommander un {keyword} a {location}",
+            "qu\u0027y a-t-il a faire a {location}",
+            "recommander ce qu\u0027il y a a faire a {location}",
+            "recommander quoi faire a {location}",
+            "recommander quelque chose a {location}",
+            "que puis-je faire a {location}",
+            "recommander quelque chose a faire a {location}",
+            "que {keyword} y a-t-il",
+            "quel {keyword} y a-t-il autour de moi",
+            "quel {keyword} puis-je visiter",
+            "a quoi {keyword} puis-je aller",
+            "qu\u0027est-ce qu\u0027un bon {keyword}",
+            "qu\u0027est-ce qu\u0027un {keyword} bon a visiter",
+            "quel est le bon {keyword} ou aller",
+            "recommander un bon {keyword} a visiter",
+            "recommander le meilleur {keyword}",
+            "recommander un {keyword}",
+            "dans quel endroit je peux {keyword}",
+            "recommander un endroit a {keyword}",
+            "recommander ou {keyword}",
+            "recommander {keyword}",
+            "recommander a {keyword}",
+            "ou puis-je aller {keyword}",
+            "quel est le bon endroit pour {keyword}",
+            "partout ou je peux {keyword}",
+            "est la ou je peux {keyword}",
+            "ou pouvez-vous {keyword}",
+            "Ou puis-je {keyword}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "SendItineraryIntent",
+          "slots": [],
+          "samples": [
+            "transmettre ça",
+            "envoyez-le moi",
+            "le transferer",
+            "effronte",
+            "envoyez-moi",
+            "envoyer l\u0027itineraire",
+            "Envoie le moi",
+            "envoyer",
+            "envoyer par e-mail",
+            "envoyez-le par e-mail",
+            "envoyer l\u0027itineraire par e-mail",
+            "envoyez-moi l\u0027itineraire",
+            "Envoyez moi un email",
+            "e-mail",
+            "transmettez-moi l\u0027itineraire",
+            "pouvez-vous m\u0027envoyer l\u0027itineraire",
+            "envoyez-moi l\u0027itineraire",
+            "email"
+          ]
+        },
+        {
+          "name": "PutAPinOnItIntent",
+          "slots": [
+            {
+              "name": "location_names",
+              "type": "AMAZON.Book",
+              "multipleValues": {
+                "enabled": false
+              }
+            }
+          ],
+          "samples": [
+            "mettre {location_names} dans le plan",
+            "enregistrer {location_names} dans le plan",
+            "epingler {location_names} au plan",
+            "epingler {location_names} a mon itineraire",
+            "epingler {location_names} a l\u0027itineraire",
+            "epingler {location_names} dans mon itineraire",
+            "epingler {location_names} dans l\u0027itineraire",
+            "mettre {location_names} dans mon itineraire",
+            "enregistrer {location_names} dans l\u0027itineraire",
+            "enregistrer {location_names} dans mon itineraire",
+            "mettre {location_names} dans l\u0027itineraire",
+            "enregistrer {location_names}",
+            "pin {location_names}",
+            "mettre une epingle sur {location_names}"
+          ]
+        },
+        {
+          "name": "ReadItineraryIntent",
+          "slots": [],
+          "samples": [
+            "welcome to chicago",
+            "output itinerary",
+            "read itinerary"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "10"
+}

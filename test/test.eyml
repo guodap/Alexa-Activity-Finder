@@ -1,0 +1,98 @@
+configuration:
+  locale: en-GB
+  interactionModel: models/en-US.json
+  address:
+    addressLine1: 215 Elm Street, NW
+    city: Washington
+    countryCode: US
+    postalCode: 20816
+    stateOrRegion: DC
+  userProfile:
+    email: pandamime100hp@gmail.com
+    name: Guoda P
+---
+- test: 1. Launch skill - location enabled
+- LaunchRequest: Welcome to Things to Do. You can ask me to recommend things to do in your local area or ask me to help. Which would you like to try?
+---
+- test.skip: 2. Pin - no previous query
+- PutAPinOnItIntent location_names=hey:
+    - response.outputSpeech.ssml: I'm sorry, I couldn't add any locations to your itinerary.
+---
+- test: 3. Recommend things to do - mcdonalds problem - replace with addresses
+- RecommendThingsToDoIntent keyword=mcdonalds:
+    - response.outputSpeech.ssml: Here is what I found for mcdonalds in Washington, DC.*
+---
+- test: 4. Recommend things to do - without slot values - location enabled
+- RecommendThingsToDoIntent:
+    - response.outputSpeech.ssml: Here is what I found in Washington, DC.*
+    - response.reprompt.outputSpeech.ssml: Would you like other recommendations or pin any of these recommendations?
+---
+- test.skip: 5. Recommend things to do - given keyword only - location enabled
+- RecommendThingsToDoIntent keyword=restaurant:
+    - response.outputSpeech.ssml: Here is what I found for restaurant in Washington, DC.*
+    - response.reprompt.outputSpeech.ssml: Would you like other recommendations or pin any of these recommendations?
+---
+- test.skip: 6. Recommend things to do - given location only - location enabled
+- RecommendThingsToDoIntent location=Sydney:
+    - response.outputSpeech.ssml: Here is what I found in Sydney.*
+    - response.reprompt.outputSpeech.ssml: Would you like other recommendations or pin any of these recommendations?
+---
+- test: 7. Recommend things to do - given keyword and location - location enabled
+- RecommendThingsToDoIntent keyword=cafe location=Dublin:
+    - response.outputSpeech.ssml: Here is what I found for cafe in Dublin.*
+    - response.reprompt.outputSpeech.ssml: Would you like other recommendations or pin any of these recommendations?
+---
+- test.skip: 8. Email itinerary - itinerary doesn't exist - email enabled
+- SendItineraryIntent:
+    - response.outputSpeech.ssml: I'm sorry, there is currently no itinerary created. Ask me to recommend you something and pin something from the recommendations
+---
+- test.skip: 9. Pin - previous query exists - no slot value
+- PutAPinOnItIntent:
+    - response.outputSpeech.ssml: Please pin something from my previous recommendations
+---
+- test.skip: 10. Pin - previous query exists - wrong slot value
+- PutAPinOnItIntent location_names=hey:
+    - response.outputSpeech.ssml: I'm sorry, I couldn't add any locations to your itinerary
+---
+- test: 11. Pin - previous query exists - one valid slot value of one words
+- PutAPinOnItIntent location_names=Art:
+    - response.outputSpeech.ssml: I have 1 location added to your itinerary
+---
+- test: 12. Pin - previous query exists - one valid slot value of one words that's already pinned
+- PutAPinOnItIntent location_names=Art:
+    - response.outputSpeech.ssml: I have already pinned Art
+---
+- test.skip: 13. Pin - previous query exists - one valid slot value of two words
+- PutAPinOnItIntent location_names=Art Gallery:
+    - response.outputSpeech.ssml: I have 1 location added to your itinerary
+---
+- test.skip: 14. Pin - previous query exists - one valid slot value of three words
+- PutAPinOnItIntent location_names=Art Gallery Dublin:
+    - response.outputSpeech.ssml: I have 1 location added to your itinerary
+---
+- test: 15. Pin - previous query exists - pin all
+- PutAPinOnItIntent location_names=all:
+    - response.outputSpeech.ssml: I have 5 locations added to your itinerary
+---
+- test: 16. Pin - previous query exists - pin everything
+- PutAPinOnItIntent location_names=everything:
+    - response.outputSpeech.ssml: I have 5 locations added to your itinerary
+---
+- test: 17. Email itinerary - itinerary exists - email enabled
+- SendItineraryIntent:
+    - response.outputSpeech.ssml: I have sent you the itinerary you requested to *
+---
+- test.skip: 18. Help
+- AMAZON.HelpIntent: You can ask me to recommend things to do in your local area
+---
+- test.skip: 19. Cancel
+- AMAZON.CancelIntent: Goodbye!
+---
+- test.skip: 20. Stop
+- AMAZON.StopIntent: Goodbye!
+---
+- test.skip: 21. Navigate Home
+- AMAZON.NavigateHomeIntent: Navigate
+---
+- test.skip: 22. Fallback
+- AMAZON.FallbackIntent: Sorry, I don't know about that. Please try again.

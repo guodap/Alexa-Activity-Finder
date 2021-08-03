@@ -1,0 +1,421 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for localization.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="index.html">All files</a> localization.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>1/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>1/1</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">module.exports = {
+    "en-US": {
+        translation: {
+            WELCOME: "Welcome to Things to Do. You can ask me to recommend things to do in your local area or ask me to help. Which would you like to try?",
+            HELP: "You can ask me to recommend things to do in your local area.",
+            GOODBYE: "Goodbye!",
+            FALLBACK: "Sorry, I don\'t know about that. Please try again.",
+            REFLECTOR: "You just triggered {{intentName}}.",
+            ERROR: "Sorry, I had trouble doing what you asked. Please try again.",
+            PERMISSIONS_ADDRESS: "You must grant permission to retrieve your address. Find the permission settings in the Alexa mobile App.",
+            PERMISSIONS_EMAIL: "You must grant permission to retrieve your name and email. Find the permission settings in the Alexa mobile App.",
+            NO_LOCATIONS: "Sorry, I couldn\'t find anything.",
+            REPROMPT_ERROR: "Would you like me to recommend you something?",
+            REPROMPT_REC_NO_LOCATIONS: "Would you like to try another recommendation?",
+            REPROMPT_REC: "Would you like other recommendations or pin any of these recommendations?",
+            REPROMPT_PIN_LOCATIONS: "Would you like another recommendation, pin another location or send you the itinerary?",
+            REPROMPT_PIN_NO_LOCATION: "Please pin something from my previous recommendations.",
+            PIN_LOCATION: "I have 1 location added to your itinerary.",
+            PIN_LOCATIONS: "I have {{pinned.length}} locations added to your itinerary.",
+            PIN_NO_LOCATIONS: "No locations were added to your itinerary.",
+            PIN_NOT_FOUND: "I\'m sorry, I couldn\'t add any locations to your itinerary.",
+            PIN_EXISTS: "I have already pinned {{location_names}}",
+            EMAIL_SENT: "I have sent you the itinerary you requested to ${email}.",
+            EMAIL_NO_PINS: "I\'m sorry, there is currently no itinerary created. Ask me to recommend you something and pin something from the recommendations.",
+            HTML_TABLE_HEADER: "&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Rating&lt;/th&gt;&lt;th&gt;Address&lt;/th&gt;&lt;th&gt;Open&lt;/th&gt;&lt;/tr&gt;||rows||&lt;/table&gt;",
+            HTML_EMAIL_GREETING: "&lt;p&gt;Hello, {{name}}&lt;/p&gt;&lt;p&gt;This is an itinerary generated by ThingsToDo Alexa skill.&lt;/p&gt;",
+            YES: "Yes",
+            NO: "No",
+        }
+    },
+    it: {
+        translation: {
+            WELCOME: "Benvenuto in Cose da fare. Puoi chiedermi di consigliarti cose da fare nella tua zona o chiedermi di aiutarti. Quale vorresti provare?",
+            HELP: "Puoi chiedermi di consigliarti cose da fare nella tua zona.",
+            GOODBYE: "Addio!",
+            FALLBACK: "Mi dispiace, non lo so. Per favore riprova.",
+            REFLECTOR: "Hai appena attivato ${intentName}.",
+            ERROR: "Scusa, ho avuto problemi a fare quello che mi hai chiesto. Per favore riprova.",
+            PERMISSIONS_ADDRESS: "Devi concedere l\'autorizzazione per recuperare il tuo indirizzo. Trova le impostazioni di autorizzazione nell\'App mobile Alexa.",
+            PERMISSIONS_EMAIL: "Devi concedere l\'autorizzazione per recuperare la tua email. Trova le impostazioni di autorizzazione nell\'App mobile Alexa.",
+            NO_LOCATIONS: "Mi spiace, non sono riuscito a trovare niente.",
+            REPROMPT_REC_NO_LOCATIONS: "Vorresti provare un\'altra raccomandazione?",
+            REPROMPT_REC: "Desideri altri consigli o appuntare qualcuno di questi consigli?",
+            REPROMPT_PIN_LOCATIONS: "Vorresti un altro consiglio, segnare un\'altra posizione o inviarti l\'itinerario?",
+            REPROMPT_PIN_NO_LOCATION: "Si prega di appuntare qualcosa dai miei precedenti consigli.",
+            PIN_LOCATION: "Ho 1 luogo aggiunto al tuo itinerario.",
+            PIN_LOCATIONS: "Ho ${pinned.length} località aggiunte al tuo itinerario.",
+            PIN_NO_LOCATIONS: "Nessuna località è stata aggiunta al tuo itinerario.",
+            PIN_NOT_FOUND: "Mi dispiace, non sono riuscito ad aggiungere nessuna località al tuo itinerario.",
+            PIN_EXISTS: "Ho già bloccato ${location_names}",
+            EMAIL_SENT: "Ti ho inviato l\'itinerario che hai richiesto a ${email}.",
+            EMAIL_NO_PINS: "Mi dispiace, al momento non è stato creato alcun itinerario. Chiedimi di consigliarti qualcosa e di appuntare qualcosa dai consigli.",
+            HTML_TABLE_HEADER: "&lt;table&gt;&lt;tr&gt;&lt;th&gt;Nome&lt;/th&gt;&lt;th&gt;Valutazione&lt;/th&gt;&lt;th&gt;Indirizzo&lt;/th&gt;&lt;th&gt;Aperto&lt;/th&gt;&lt;/tr&gt;||rows||&lt;/table&gt;",
+            HTML_EMAIL_GREETING: "&lt;p&gt;Ciao, &amp;{name}&lt;/p&gt;&lt;p&gt;Questo è un itinerario generato dall\'abilità ThingsToDo Alexa.&lt;/p&gt;",
+            YES: "Sì",
+            NO: "No",
+        }
+    },
+    fr: {
+        translation: {
+            WELCOME: "Welcome to Things to Do. You can ask me to recommend things to do in your local area or ask me to help. Which would you like to try?",
+            HELP: "You can ask me to recommend things to do in your local area.",
+            GOODBYE: "Goodbye!.",
+            FALLBACK: "Sorry, I don\'t know about that. Please try again.",
+            REFLECTOR: "You just triggered ${intentName}.",
+            ERROR: "Sorry, I had trouble doing what you asked. Please try again.",
+            PERMISSIONS_ADDRESS: "You must grant permission to retrieve your address. Find the permission settings in the Alexa mobile App.",
+            PERMISSIONS_EMAIL: "You must grant permission to retrieve your email. Find the permission settings in the Alexa mobile App.",
+            NO_LOCATIONS: "Sorry, I couldn\'t find anything.",
+            REPROMPT_REC_NO_LOCATIONS: "Would you like to try another recommendation?",
+            REPROMPT_REC: "Would you like other recommendations or pin any of these recommendations?",
+            REPROMPT_PIN_LOCATIONS: "Would you like another recommendation, pin another location or send you the itinerary?",
+            REPROMPT_PIN_NO_LOCATION: "Please pin something from my previous recommendations.",
+            PIN_LOCATION: "I have 1 location added to your itinerary.",
+            PIN_LOCATIONS: "I have ${pinned.length} locations added to your itinerary.",
+            PIN_NO_LOCATIONS: "No locations were added to your itinerary.",
+            PIN_NOT_FOUND: "I\'m sorry, I couldn\'t add any locations to your itinerary.",
+            PIN_EXISTS: "I have already pinned ${location_names}",
+            EMAIL_SENT: "I have sent you the itinerary you requested to ${email}.",
+            EMAIL_NO_PINS: "I\'m sorry, there is currently no itinerary created. Ask me to recommend you something and pin something from the recommendations.",
+            HTML_TABLE_HEADER: "&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Rating&lt;/th&gt;&lt;th&gt;Address&lt;/th&gt;&lt;th&gt;Open&lt;/th&gt;&lt;/tr&gt;||rows||&lt;/table&gt;",
+            HTML_EMAIL_GREETING: "&lt;p&gt;Hello, &amp;{name}&lt;/p&gt;&lt;p&gt;This is an itinerary generated by ThingsToDo Alexa skill.&lt;/p&gt;",
+            YES: "Yes",
+            NO: "No",
+        }
+    },
+    es: {
+        translation: {
+            WELCOME: "Bienvenido a Cosas para hacer. Puede pedirme que le recomiende cosas para hacer en su área local o pedirme ayuda. ¿Cuál te gustaría probar?",
+            HELP: "Puede pedirme que le recomiende cosas que hacer en su área local.",
+            GOODBYE: "¡Adiós!",
+            FALLBACK: "Lo siento, no sé nada de eso. Inténtalo de nuevo.",
+            REFLECTOR: "Acabas de disparar ${intentName}.",
+            ERROR: "Lo siento, tuve problemas para hacer lo que me pediste. Inténtalo de nuevo.",
+            PERMISSIONS_ADDRESS: "Debe otorgar permiso para recuperar su dirección. Busque la configuración de permisos en la aplicación móvil Alexa.",
+            PERMISSIONS_EMAIL: "Debe otorgar permiso para recuperar su correo electrónico. Busque la configuración de permisos en la aplicación móvil Alexa.",
+            NO_LOCATIONS: "Lo siento, no pude encontrar nada.",
+            REPROMPT_REC_NO_LOCATIONS: "¿Le gustaría probar otra recomendación?",
+            REPROMPT_REC: "¿Le gustaría otras recomendaciones o anotar alguna de estas recomendaciones?",
+            REPROMPT_PIN_LOCATIONS: "¿Le gustaría otra recomendación, fijar otra ubicación o enviarle el itinerario?",
+            REPROMPT_PIN_NO_LOCATION: "Fije algo de mis recomendaciones anteriores.",
+            PIN_LOCATION: "He añadido 1 ubicación a su itinerario.",
+            PIN_LOCATIONS: "He añadido ${pinned.length} ubicaciones a su itinerario.",
+            PIN_NO_LOCATIONS: "No se agregaron ubicaciones a su itinerario.",
+            PIN_NOT_FOUND: "Lo siento, no pude agregar ninguna ubicación a su itinerario.",
+            PIN_EXISTS: "Ya he fijado ${location_names}.",
+            EMAIL_SENT: "Le he enviado el itinerario que solicitó a ${email}.",
+            EMAIL_NO_PINS: "Lo siento, actualmente no hay ningún itinerario creado. Pídeme que te recomiende algo y fija algo de las recomendaciones.",
+            HTML_TABLE_HEADER: "&lt;table&gt;&lt;tr&gt;&lt;th&gt;Nombre&lt;/th&gt;&lt;th&gt;Clasificación&lt;/th&gt;&lt;th&gt;Dirección&lt;/th&gt;&lt;th&gt;Abierto&lt;/th&gt;&lt;/tr&gt;||rows||&lt;/table&gt;",
+            HTML_EMAIL_GREETING: "&lt;p&gt;Hola, &amp;{name}&lt;/p&gt;&lt;p&gt;Este es un itinerario generado por la habilidad de Alexa de ThingsToDo.&lt;/p&gt;",
+            YES: "Sí",
+            NO: "No",
+        }
+    },
+}</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
+                at Sun Mar 07 2021 19:08:05 GMT+0000 (Greenwich Mean Time)
+            </div>
+        </div>
+        <script src="prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="sorter.js"></script>
+        <script src="block-navigation.js"></script>
+    </body>
+</html>
+    

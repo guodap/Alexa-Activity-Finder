@@ -1,0 +1,163 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "fr-FR": {
+          "summary": "Une simple compétence \"recommandations\" qui génère un itinéraire de choses à faire autour de vous.",
+          "examplePhrases": [
+            "Alexa, ouvre le Recherche D\u0027activite"
+          ],
+          "keywords": [
+            "activités",
+            "recommandation",
+            "restaurant",
+            "baignade",
+            "aventure",
+            "visites",
+            "de",
+            "sites"
+          ],
+          "name": "Recherche D\u0027activité",
+          "description": "Passez-vous beaucoup de temps à vous demander: \"Que faire?\". Eh bien maintenant, Things To Do vous aide à organiser une journée d\u0027activités amusantes. Demandez à Alexa de vous recommander des activités comme un restaurant, un parc ou peut-être un cinéma. Ensuite, épinglez certaines des recommandations à votre itinéraire. Une fois que vous avez établi un itinéraire de choses à faire, dites simplement à Alexa de vous envoyer l\u0027itinéraire par e-mail. Vous recevrez un e-mail (au compte Alexa enregistré) avec les lieux épinglés.",
+          "smallIconUri": "file://assets/images/fr-FR_smallIconUri.png",
+          "largeIconUri": "file://assets/images/fr-FR_largeIconUri.png"
+        },
+        "en-GB": {
+          "summary": "A recommendation skill that can suggest things to do in your local area or anywhere in the world, with itinerary planning and emailing capabilities.",
+          "examplePhrases": [
+            "Alexa, open Activity Finder",
+            "Alexa, ask Activity Finder what can I do",
+            "Alexa, ask Activity Finder to recommend a restaurant in New York"
+          ],
+          "keywords": [
+            "activities",
+            "things",
+            "to",
+            "do",
+            "recommendation",
+            "restaurant",
+            "cafe",
+            "local",
+            "swimming",
+            "adventure",
+            "travel",
+            "sightseeing",
+            "attractions",
+            "tourist",
+            "attractions"
+          ],
+          "name": "Activity Finder",
+          "description": "Example Commands:\nLAUNCH - \"Alexa, open Activity Finder\"\nHELP - \"Alexa, ask Activity Finder to tell me more about the skill\"\nLOCAL RECOMMENDATIONS -\n\"Alexa, ask Activity Finder what can I do locally\"\n\"Alexa, ask Activity Finder to recommend a cafe in my local area\"\nSPECIFIC LOCATION RECOMMENDATIONS - \n\"Alexa, ask Activity Finder to recommend something in New York\"\n\"Alexa, ask Activity Finder to recommend a restaurant in Sydney\"\nPIN RESULTS - \n\"Pin \u0027Cafe Neo\u0027 to my itinerary\"\n\"Pin everything\"\nEMAIL - \"Email me\"\nSTOP - \"Alexa, stop\"\n\nDescription:\nActivity Finder uses Google Places to help you discover things to do in your local area or any other location you\u0027re curious about!\nYou can also choose to pin a result returned from the previous recommendation to start creating an itinerary for a day of fun-filled activities!\nOnce you\u0027re finished creating your itinerary, you can email it to yourself.\n\nNote: This skill requires you to enable your full name, email and device address permissions.\nHowever, if you choose not to, you can still open the skill, ask for help and avail of the \"Specific Location Recommendations\" (only) listed in the example commands above!",
+          "smallIconUri": "file://assets/images/en-GB_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-GB_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Google Places API provided.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:732942037297:function:0409cfff-97b9-45fc-8474-82c70a3f298a:Release_0"
+        },
+        "interfaces": [
+          {
+            "supportedViewports": [
+              {
+                "minHeight": 540,
+                "mode": "TV",
+                "shape": "RECTANGLE",
+                "maxHeight": 540,
+                "minWidth": 960,
+                "maxWidth": 960
+              },
+              {
+                "minHeight": 480,
+                "mode": "HUB",
+                "shape": "ROUND",
+                "maxHeight": 480,
+                "minWidth": 480,
+                "maxWidth": 480
+              },
+              {
+                "minHeight": 600,
+                "mode": "HUB",
+                "shape": "RECTANGLE",
+                "maxHeight": 600,
+                "minWidth": 1024,
+                "maxWidth": 1024
+              },
+              {
+                "minHeight": 800,
+                "mode": "HUB",
+                "shape": "RECTANGLE",
+                "maxHeight": 800,
+                "minWidth": 1280,
+                "maxWidth": 1280
+              },
+              {
+                "minHeight": 480,
+                "mode": "HUB",
+                "shape": "RECTANGLE",
+                "maxHeight": 480,
+                "minWidth": 960,
+                "maxWidth": 960
+              }
+            ],
+            "type": "ALEXA_PRESENTATION_APL"
+          }
+        ],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:732942037297:function:0409cfff-97b9-45fc-8474-82c70a3f298a:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:732942037297:function:0409cfff-97b9-45fc-8474-82c70a3f298a:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:732942037297:function:0409cfff-97b9-45fc-8474-82c70a3f298a:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::devices:all:address:full:read"
+      },
+      {
+        "name": "alexa::profile:name:read"
+      },
+      {
+        "name": "alexa::profile:email:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "fr-FR": {
+          "privacyPolicyUrl": "https://www.privacypolicygenerator.info/live.php?token\u003dwyBwJBKMudAEzhp7VfzOZtGanI2OLW8S"
+        },
+        "en-GB": {
+          "privacyPolicyUrl": "https://www.privacypolicygenerator.info/live.php?token\u003dwyBwJBKMudAEzhp7VfzOZtGanI2OLW8S"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": true
+    }
+  }
+}

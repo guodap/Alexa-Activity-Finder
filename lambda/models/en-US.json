@@ -1,0 +1,175 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "activity finder",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help",
+                        "how to"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop",
+                        "silence",
+                        "shut up",
+                        "stop it"
+                    ]
+                },
+                {
+                    "name": "RecommendThingsToDoIntent",
+                    "slots": [
+                        {
+                            "name": "keyword",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "location",
+                            "type": "AMAZON.AT_CITY"
+                        }
+                    ],
+                    "samples": [
+                        "what {keyword} are local",
+                        "what {keyword} can I find locally",
+                        "what {keyword} are nearby",
+                        "what {keyword} are around me",
+                        "recommend activity",
+                        "what activities can you recommend",
+                        "what activity can I do",
+                        "recommend an activity",
+                        "recommend the best things to do",
+                        "recommend something I can do locally",
+                        "recommend something to do locally",
+                        "what can I do locally",
+                        "what is there to do locally",
+                        "what can I do close by",
+                        "what is something I can do close by",
+                        "what is something I can do nearby",
+                        "what can I do nearby",
+                        "recommend what you can do close by",
+                        "recommend what you can do nearby",
+                        "recommend what I can do close by",
+                        "recommend what I can do nearby",
+                        "recommend something to do close by",
+                        "recommend something to do nearby",
+                        "recommend things",
+                        "where can I go",
+                        "recommend something",
+                        "what can I do",
+                        "recommend things to do",
+                        "recommend things to do in my local area",
+                        "recommend {keyword} in {location}",
+                        "recommend a {keyword} in {location}",
+                        "what's there to do in {location}",
+                        "recommend what's there to do in {location}",
+                        "recommend what to do in {location}",
+                        "what is there to do in {location}",
+                        "recommend something in {location}",
+                        "what can I do in {location}",
+                        "recommend something to do in {location}",
+                        "what {keyword} are there",
+                        "what {keyword} is there around me",
+                        "what {keyword} can I visit",
+                        "what {keyword} can I go to",
+                        "what's a good {keyword}",
+                        "what's a good {keyword} to visit",
+                        "what's a good {keyword} to go to",
+                        "recommend a good {keyword} to visit",
+                        "recommend a good {keyword} to go to",
+                        "recommend the best {keyword}",
+                        "recommend a {keyword}",
+                        "recommend an {keyword}",
+                        "what's a place I can {keyword} in",
+                        "what's a location I can {keyword} in",
+                        "recommend a place to {keyword}",
+                        "recommend where to {keyword}",
+                        "recommend {keyword}",
+                        "recommend to {keyword}",
+                        "where can I go {keyword}",
+                        "what's a good place to {keyword}",
+                        "anywhere I can {keyword}",
+                        "is there anywhere I can {keyword}",
+                        "recommend somewhere to {keyword}",
+                        "where can you {keyword}",
+                        "where can I {keyword}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SendItineraryIntent",
+                    "slots": [],
+                    "samples": [
+                        "forward that",
+                        "forward it to me",
+                        "forward it",
+                        "forward",
+                        "send me it",
+                        "send the itinerary",
+                        "send it to me",
+                        "send",
+                        "email that",
+                        "email it",
+                        "email the itinerary",
+                        "email me the itinerary",
+                        "email me",
+                        "email",
+                        "forward me the itinerary",
+                        "can you send me the itinerary",
+                        "send me the itinerary"
+                    ]
+                },
+                {
+                    "name": "PutAPinOnItIntent",
+                    "slots": [
+                        {
+                            "name": "location_names",
+                            "type": "AMAZON.Book",
+                            "multipleValues": {
+                                "enabled": false
+                            }
+                        }
+                    ],
+                    "samples": [
+                        "add {location_names}",
+                        "put {location_names} in the plan",
+                        "save {location_names} to the plan",
+                        "pin {location_names} to the plan",
+                        "pin {location_names} to my itinerary",
+                        "pin {location_names} to the itinerary",
+                        "pin {location_names} in my itinerary",
+                        "pin {location_names} in the itinerary",
+                        "put {location_names} in my itinerary",
+                        "save {location_names} in the itinerary",
+                        "save {location_names} in my itinerary",
+                        "put {location_names} in the itinerary",
+                        "save {location_names}",
+                        "pin {location_names}",
+                        "put a pin on {location_names}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

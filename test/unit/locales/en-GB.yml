@@ -1,0 +1,59 @@
+# This is the localization file for en-GB. Please, modify the values so that they align
+# with your voice app responses for this locale
+
+# Unit Tests Permissions Enabled
+unitTestPermEnabledSuiteDesc: Unit testing each component of ThingsToDo with permissions enabled
+unitTestPE1: 1. Launch skill - location enabled
+unitTestPE2: 2. Pin - no previous query
+unitTestPE3: 3. Recommend things to do - mcdonalds problem - replace with addresses
+unitTestPE4: 4. Recommend things to do - without slot values - location enabled
+unitTestPE5: 5. Recommend things to do - given keyword only - location enabled
+unitTestPE6: 6. Recommend things to do - given location only - location enabled
+unitTestPE7: 7. Recommend things to do - given keyword and location - location enabled
+unitTestPE8: 8. Email itinerary - itinerary doesn't exist - email enabled
+unitTestPE9: 9. Pin - previous query exists - no slot value
+unitTestPE10: 10. Pin - previous query exists - wrong slot value
+unitTestPE11: 11. Pin - previous query exists - one valid slot value of one words
+unitTestPE12: 12. Pin - previous query exists - one valid slot value of one words that's already pinned
+unitTestPE13: 13. Pin - previous query exists - one valid slot value of two words
+unitTestPE14: 14. Pin - previous query exists - one valid slot value of three words
+unitTestPE15: 15. Pin - previous query exists - pin all
+unitTestPE16: 16. Pin - previous query exists - pin everything
+unitTestPE17: 17. Email itinerary - itinerary exists - email enabled
+unitTestPE18: 18. Help
+unitTestPE19: 19. Cancel
+unitTestPE20: 20. Stop
+unitTestPE21: 21. Navigate Home
+unitTestPE22: 22. Fallback
+
+# Unit Tests Permissions Disabled
+unitTestPermDisabledSuiteDesc: Unit testing each component of ThingsToDo with permissions disabled
+unitTestPD1: 23. Launch skill - location disabled
+unitTestPD2: 24. Recommend things to do - without slot values - location disabled
+unitTestPD3: 25. Recommend things to do - given keyword only - location disabled
+unitTestPD4: 26. Recommend things to do - given location only - location disabled
+unitTestPD5: 27. Recommend things to do - given keyword and location - location disabled
+unitTestPD6: 28. Email itinerary - itinerary exists - email disabled
+
+# Test outcomes
+launchPrompt: Welcome to Activity Finder. I can recommend restaurants, attractions or general things to do in your local area or anywhere in the world! I can also create an itinerary and email it to you. If you would like some tips on how to use the skill say, "tell me more". To start, try saying, "Recommend a local restaurant".
+helpPrompt: Try saying, "Recommend something in my local area" or, "Recommend a cafe in Sydney". Then, when you have heard my recommendations, you can ask me to pin a location by saying, "Pin hardrock cafe", for example. This will add a location to your itinerary. You can also ask to "pin everything". Once you're finished adding to your itinerary, ask me to send it to you by saying, "email me".
+goodbyePrompt: Goodbye!
+fallbackPrompt: Sorry, I don't know about that. Please try again.
+navigatePrompt: You just triggered AMAZON.NavigateHomeIntent.
+pinNoPinned: I'm sorry, I couldn't add any locations to your itinerary.
+recsReturnedMcdonalds: Here is what I found for mcdonalds in Washington, DC.*
+recsReturned: Here is what I found in Washington, DC.*
+recsReturnedReprompt: Would you like another recommendation or to pin a place from these results?
+recsReturnedRestaurant: Here is what I found for restaurant in Washington, DC.*
+recsReturnedSydney: Here is what I found in Sydney.*
+recsReturnedCafeDublin: Here is what I found for cafe in Dublin.*
+sendItineraryNoPinned: I'm sorry, there is currently no itinerary created. Ask me to recommend you something and pin a place from the recommendations.
+pinNoLocations: No place name was specified for the pin.
+pinCouldNotFind: I'm sorry, I couldn't add any locations to your itinerary.
+pin1Location: I pinned 1 location to your itinerary.
+pinExists: I have already pinned Art.
+pinAll: I pinned * locations to your itinerary.
+sendItinerarySent: I have sent you the itinerary you requested to *
+emailPermissions: You must grant permission to retrieve your name and email. Find the permission settings in the Alexa mobile App.
+addressPermissions: You must grant permission to retrieve your address. Find the permission settings in the Alexa mobile App.

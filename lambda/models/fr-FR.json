@@ -1,0 +1,159 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "recherche d'activité",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "annuler"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "aider",
+                        "comment"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "arrêter",
+                        "silence",
+                        "tais-toi",
+                        "arrête ça"
+                    ]
+                },
+                {
+                    "name": "RecommendThingsToDoIntent",
+                    "slots": [
+                        {
+                            "name": "keyword",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "location",
+                            "type": "AMAZON.City"
+                        }
+                    ],
+                    "samples": [
+                        "quels {keyword} sont locaux",
+                        "que {keyword} puis-je trouver localement",
+                        "quels {keyword} sont à proximité",
+                        "ce que {keyword} sont autour de moi",
+                        "quelles activités pouvez-vous recommander",
+                        "quelle activité puis-je faire",
+                        "recommander une activité",
+                        "recommander les meilleures choses à faire",
+                        "recommander quelque chose que je peux faire localement",
+                        "recommander quelque chose à faire localement",
+                        "que puis-je faire localement",
+                        "qu'y a-t-il à faire localement",
+                        "qu'est-ce que je peux faire à proximité",
+                        "que puis-je faire à proximité",
+                        "recommande ce que vous pouvez faire à proximité",
+                        "recommander ce que vous pouvez faire à proximité",
+                        "recommander ce que je peux faire à proximité",
+                        "recommander quelque chose à faire à proximité",
+                        "recommander des choses",
+                        "où puis-je aller",
+                        "recommander quelque chose",
+                        "Que puis-je faire",
+                        "recommander des choses à faire",
+                        "recommander des activités dans ma région",
+                        "recommander {keyword} à {location}",
+                        "recommander un {keyword} à {location}",
+                        "qu'y a-t-il à faire à {location}",
+                        "recommander ce qu'il y a à faire à {location}",
+                        "recommander quoi faire à {location}",
+                        "recommander quelque chose à {location}",
+                        "que puis-je faire à {location}",
+                        "recommander quelque chose à faire à {location}",
+                        "que {keyword} y a-t-il",
+                        "quel {keyword} y a-t-il autour de moi",
+                        "quel {keyword} puis-je visiter",
+                        "à quoi {keyword} puis-je aller",
+                        "qu'est-ce qu'un bon {keyword}",
+                        "qu'est-ce qu'un {keyword} bon à visiter",
+                        "quel est le bon {keyword} où aller",
+                        "recommander un bon {keyword} à visiter",
+                        "recommander le meilleur {keyword}",
+                        "recommander un {keyword}",
+                        "dans quel endroit je peux {keyword}",
+                        "recommander un endroit à {keyword}",
+                        "recommander où {keyword}",
+                        "recommander {keyword}",
+                        "recommander à {keyword}",
+                        "où puis-je aller {keyword}",
+                        "quel est le bon endroit pour {keyword}",
+                        "partout où je peux {keyword}",
+                        "est là où je peux {keyword}",
+                        "où pouvez-vous {keyword}",
+                        "Où puis-je {keyword}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SendItineraryIntent",
+                    "slots": [],
+                    "samples": [
+                        "transmettre ça",
+                        "envoyez-le moi",
+                        "le transférer",
+                        "effronté",
+                        "envoyez-moi",
+                        "envoyer l'itinéraire",
+                        "Envoie le moi",
+                        "envoyer",
+                        "envoyer par e-mail",
+                        "envoyez-le par e-mail",
+                        "envoyer l'itinéraire par e-mail",
+                        "envoyez-moi l'itinéraire",
+                        "Envoyez moi un email",
+                        "e-mail",
+                        "transmettez-moi l'itinéraire",
+                        "pouvez-vous m'envoyer l'itinéraire",
+                        "envoyez-moi l'itinéraire"
+                    ]
+                },
+                {
+                    "name": "PutAPinOnItIntent",
+                    "slots": [
+                        {
+                            "name": "location_names",
+                            "type": "AMAZON.Book",
+                            "multipleValues": {
+                                "enabled": false
+                            }
+                        }
+                    ],
+                    "samples": [
+                        "mettre {location_names} dans le plan",
+                        "enregistrer {location_names} dans le plan",
+                        "épingler {location_names} au plan",
+                        "épingler {location_names} à mon itinéraire",
+                        "épingler {location_names} à l'itinéraire",
+                        "épingler {location_names} dans mon itinéraire",
+                        "épingler {location_names} dans l'itinéraire",
+                        "mettre {location_names} dans mon itinéraire",
+                        "enregistrer {location_names} dans l'itinéraire",
+                        "enregistrer {location_names} dans mon itinéraire",
+                        "mettre {location_names} dans l'itinéraire",
+                        "enregistrer {location_names}",
+                        "pin {location_names}",
+                        "mettre une épingle sur {location_names}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
